@@ -1,0 +1,556 @@
+body {
+    font: 15px/1.5 "Times New Roman", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: #CAB687;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.podela {
+    display: flex;
+}
+
+.podela img {
+    float: right;
+    padding: 20px;
+    width: 700px;
+    height: 500px;
+}
+
+.dark {
+    border: #CAB687 4px solid;
+    ;
+    float: left;
+    padding: 20px;
+    text-align: left;
+    background: #CAB687;
+    font-size: 17px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+.page-title {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#main-col p {
+    font-size: 20px;
+}
+
+
+/* Header **/
+
+header {
+    background: #2d2527;
+    color: #ffffff;
+    padding-top: 0px;
+    min-height: 70px;
+    border-bottom: #CAB687 4px solid;
+    box-shadow: 0 1px 4px 0 #CAB687, 0 4px 15px 0 #CAB687;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    padding-top: 10px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding img {
+    margin-top: 0;
+    padding-top: 0;
+    width: 140px;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 15px;
+}
+
+header .naslov,
+header .current a {
+    color: #CAB687;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+#showcase {
+    padding-top: 40px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    color: #CAB687;
+}
+#showcase > img {
+    width: 100%;
+    height: 100%;
+    max-height: 750px;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: row;
+    background: #CAB687;
+    color: #2d2527;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 #CAB687, 0 4px 15px 0 #CAB687;
+}
+
+.about-main .kolona-main {
+    flex: 1;
+    color: #ffffff;
+    text-align: left;
+}
+
+.about-main .kolona-main h1 {
+    padding-top: 40px;
+    padding-left: 150px;
+}
+
+.about-main .kolona-main p {
+    padding-left: 150px;
+    font-size: 18px;
+}
+
+.about-main .kolona-main img {
+    width: 30vw;
+    padding-left: 100px;
+}
+
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #2d2527;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+
+/*Slike proizvoda*/
+
+#boxes {
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 150px;
+    height: 130px;
+}
+
+#boxes .box button,
+#boxes .box button a {
+    text-decoration: none;
+    background-color: #2d2527;
+    color: #ffffff;
+    border-color: #2d2527;
+    padding: 5px;
+}
+
+
+
+@media(max-width: 768px) {
+    .about-main {
+        flex-direction: column;
+    }
+    .about-main img {
+        display: none;
+    }
+    .about-main h1 {
+        padding-left: 0;
+    }
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+   
+    #newsletter button,
+    .quote button {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"],
+    .quote input,
+    .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+input[type=text],#mejlFeedback,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit],button[type=submitFb] {
+    background-color: #CAB687;
+    color: white;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    width: 30%;
+    margin-top: 6px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.containerFeedback {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+.col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*responzivnost*/
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/* satic na dnu */
+
+.clock {
+    color: #ffffff;
+    text-align: left;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+
+
+/* Flexbox*/
+
+.kolaci {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+
+#kolac {
+    background-color: #f4f4f4;
+}
+
+.proizvodi h1 {
+    padding: 4% 4% 2%;
+    font-size: 2em;
+}
+
+#kategorija1 {
+    background-color: #f4f4f4;
+}
+
+.okvir {
+    height: 65vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5% 10% 5%;
+    background-color: white;
+}
+
+.karta {
+    padding: 2%;
+    flex: 1 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image img {
+    width: 100%;
+    margin: auto;
+}
+
+.opis {
+    text-align: center;
+    padding-top: 10%;
+    margin: auto;
+}
+
+.plus {
+    display: none;
+}
+
+.kolaci {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    padding-bottom: 6vh;
+    margin-bottom: 4vh;
+}
+
+@media (min-width:1400px) {
+    .proizvodi {
+        max-width: 1400px;
+        margin: auto;
+    }
+}
+
+@media (max-width:920px) {
+    .karta {
+        flex: 1 30%
+    }
+    .plus {
+        display: inline;
+        flex: 1 30%;
+    }
+}
+
+@media (max-width:600px) {
+    .karta {
+        flex: 1 46%;
+    }
+    .plus {
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    .karta {
+        flex: 1 51%;
+    }
+    .plus {
+        display: none;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    font: 15px/1.5 "Times New Roman", Helvetica, sans-serif;
+    padding-bottom: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ftr {
+    background-color: #2d2527;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px;
+    margin-top: 0px;
+}
+
+.pomeraj {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.ftr .levo,
+.ftr .srednji,
+.ftr.desno {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ftr .levo {
+    width: 40%;
+}
+
+.ftr img {
+    width: 200px;
+    margin: 0;
+}
+
+.ftr h3 span {
+    color: #2d2527;
+}
+
+.ftr .linkovi {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.ftr .linkovi a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ftr .o-nama {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.ftr .srednji {
+    width: 35%;
+}
+
+.ftr .srednji p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    line-height: 40px;
+}
+
+.ftr .srednji p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.ftr .srednji p a {
+    color: #ffffff;
+    text-decoration: none;
+    ;
+}
+
+.ftr .desno {
+    float: right;
+    width: 20%;
+}
+
+.ftr .o-nama {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.ftr .o-nama span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 880px) {
+    .ftr {
+        font: bold 14px sans-serif;
+    }
+    .ftr .levo,
+    .ftr .srednji,
+    .ftr .desno {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}

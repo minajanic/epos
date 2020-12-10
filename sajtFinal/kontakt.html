@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <title>Kolaci | Feedback</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="js/script.js"></script>
+        <script src = "js/forma.js"></script>
+
+    </head>
+    <body>
+      <div class="pomeraj">
+        <header>
+            <div class="container">
+              <div id="branding">
+                <a href="index.html"> <img src="img/puskin.png" ></a> 
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Početna</a></li>
+                  <li><a href="onama.html">O nama</a></li>
+                  <li><a href="kolaci.html">Proizvodi</a></li>
+                  <li class="current"><a href="kontakt.html">Kontakt</a></li>
+                  
+                </ul>
+              </nav>
+            </div>
+        </header>
+      </div>
+          <section id="feedbackTitle"> 
+              <div class = "containerFeedback">
+                  
+              </div>
+          </section>
+        <div class="containerFeedback">
+          <h1>Kontaktirajte nas!</h1>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Ime</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="ime" name="firstname" placeholder="Vase ime..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Prezime</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="prezime" name="lastname" placeholder="Vase prezime..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Mejl</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" id="mejlFeedback" name="mailFeedback" placeholder="Vas mejl">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Tip hrane</label>
+                </div>
+                <div class="col-75">
+                  <select id="tip" name="tip">
+                    <option value="sejk">Vocna torta</option>
+                    <option value="nestoSlano">Cokoladna torta</option>
+                    <option value="nestoSlatko">Nesto izmedju</option>
+                  </select>
+                </div>
+              </div>
+              <div class = "row">
+                <div>
+                  <div class = "col-25">
+                    <label for="pol">Pol</label>
+                  </div>
+                  <div class = "col-75">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Muski</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Zenski</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Drugo</label>
+                  </div>
+                </div>
+
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Poruka</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Napisite nesto" style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row" >
+                <button type="submitFb"  id = "button_feedback" onclick = "return submitFeedback()" value="Submit"> Posalji</button>
+              </div>
+            </form>
+          </div>
+
+
+
+          <footer class="ftr">
+ 
+            <div class="levo">
+         
+            <img src="img/puskin.png" alt="">
+         
+            <p class="linkovi">
+            <a href="index.html">Početna</a>
+          ·
+            <a href="onama.html">O nama</a>
+          ·
+            <a href="kolaci.html">Kolači</a>
+          ·
+            <a href="kontakt.html">Kontakt</a>
+        
+            </p>
+         
+            </div>
+         
+            <div class="srednji">
+         
+            <div>
+            <p><span>Kraljevačkog bataljona 215</span> Kragujevac, Srbija</p>
+            </div>
+         
+            <div>
+            <p>+381 69 5500011</p>
+            </div>
+         
+            <div>
+            <p><a href="#">puskinmanufaktura@gmail.com</a></p>
+            </div>
+         
+            </div>
+         
+            <div class="desno">
+         
+            <p class="o-nama">
+            <span>O nama</span>
+            Brižljiva ručna izrada, kao osnov negovanja tradicionalnih veština u procesu proizvodnje, 
+            zajedno sa permanentnim praćenjem kretanja u tehnološkim dostignućima i neiscrpnim kreativnim kapacitetima, 
+            ostaje garant savršenog ukusa i vizuelnog identiteta naših proizvoda. 
+            </p>
+         
+          
+         
+            </div>
+         
+      </footer> 
+
+    </body>
+</html>
